@@ -1,0 +1,11 @@
+*.sw[op]
+*.py[oc]
+
+dist/*
+env
+.DS_Store
+
+*.bak
+*.db
+*.json
+*.txt
