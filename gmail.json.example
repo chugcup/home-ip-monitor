@@ -1,0 +1,6 @@
+{
+    "email_from": "SENDER@GMAIL.COM",
+    "email_password": "PASSWORD",
+    "email_to": ["RECEIVER@GMAIL.COM"],
+    "email_subject": "IP Address Change Detected"
+}

@@ -17,6 +17,16 @@ be able to update any DNS service.  It could also be used in the event you _don'
 registered DNS name and are remotely accessing resources by IP address like a caveman.
 
 
+# How
+
+The default service used is [https://api.ipify.org](https://www.ipify.org/), which returns the client's IP address
+in a nicely formatted JSON response.  Additional IP services can be used, and the script also implements
+support for [https://whatismyip.org](https://www.whatismyip.org/).  The service used can be toggled using the
+`--source` argument.
+
+    > python3 check_my_ip.py --source whatismyip
+
+
 # Requirements
 
 This script requires Python 3.6 or higher.  No other dependencies are needed.

@@ -137,7 +137,7 @@ def main(source, compare_file=None, gmail_settings=None, test_gmail=False, verbo
         print(f"Current IP: {new_ip_str}")
     elif not quiet:
         # Default output (IP only)
-        print(new_ip_str, end='')
+        print(new_ip_str)
 
     # Compare to original IP from compare file
     if compare_filepath:
@@ -155,6 +155,8 @@ def main(source, compare_file=None, gmail_settings=None, test_gmail=False, verbo
                 return  # NOTE: Break here to avoid updating 'compare_file' (if no change)
 
         # Write result to compare file
+        if not os.path.isdir(os.path.dirname(compare_filepath)):
+            os.makedirs(os.path.dirname(compare_filepath))
         with open(compare_filepath, 'w') as f:
             f.write(new_ip_str)
 
