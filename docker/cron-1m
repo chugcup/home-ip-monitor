@@ -1,0 +1,3 @@
+# External IP Monitor (redirecting stdout/stderr)
+* * * * *  /code/check_my_ip.py --verbose --compare=/data/ip.txt --gmail=/data/gmail.json > /proc/1/fd/1 2>/proc/1/fd/2
+
